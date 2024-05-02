@@ -6,13 +6,13 @@ using namespace std;
 
 int soLonNhat (int a, int b, int c, int d) {
     int max = a;
-    if (b > a && b > c && b > d) {
+    if (b > max) {
         max = b;
     }
-    else if (c > a && c > b && c > d) {
+    if (c > max) {
         max = c;
     }
-    else if (d > a && d > b && d > c) {
+    if (d > max) {
         max = d;
     }
     return max;
